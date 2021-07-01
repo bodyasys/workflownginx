@@ -1,9 +1,7 @@
 name: Nginx on EC2
 on:
   push:
-    branches:
-      - stage
-
+  
 jobs:
   BuildDockerImage:
     runs-on: self-hosted
