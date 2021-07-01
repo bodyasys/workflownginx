@@ -1,6 +1,6 @@
 name: Action-nginx-aws
 on: push
-  jobs:
+jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
