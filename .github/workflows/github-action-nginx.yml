@@ -1,11 +1,10 @@
-name: Action-nginx-aws
-on: push
-jobs:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: script
-      run: workflownginx/script.sh
-      shell: bash
-    with:
-      password: ${{ secrets.ACCESS_TOKEN }}
+- name: multiple command
+  uses: appleboy/ssh-action@master
+  with:
+    host: ${{ secrets.HOST }}
+    username: ${{ secrets.USERNAME }}
+    key: ${{ secrets.KEY }}
+    port: ${{ secrets.PORT }}
+    script: |
+      whoami
+      ls -al
