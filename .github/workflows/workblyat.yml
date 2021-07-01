@@ -1,5 +1,4 @@
-name: STAGE Deployment on AWS ECS
-
+name: Nginx on EC2
 on:
   push:
     branches:
