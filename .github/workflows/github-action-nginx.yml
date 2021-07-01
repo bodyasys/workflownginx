@@ -1,13 +1,11 @@
 name: Action-nginx-aws
 on: push
-
-jobs:
-run:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v1
-- name: script
-run: PATH/script.sh
-shell: bash
-with:
-password: ${{ secrets.ACCESS_TOKEN }}
+  jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: script
+      run: workflownginx/script.sh
+      shell: bash
+    with:
+      password: ${{ secrets.ACCESS_TOKEN }}
