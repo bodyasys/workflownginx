@@ -15,5 +15,8 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-                 whoami
                  ls -al
+                 sudo apt update
+                 sudo apt install -y nginx
+                 sudo echo "Sho tut u nas" > /var/www/html/index.html
+                 sudo service nginx start
