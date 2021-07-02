@@ -5,7 +5,7 @@ on:
 
 jobs:
   ConntctSSH:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: takurva
         uses: appleboy/ssh-action@master
