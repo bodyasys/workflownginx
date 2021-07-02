@@ -20,3 +20,7 @@ jobs:
                  sudo apt install -y nginx
                  sudo echo "Sho tut u nas" > /var/www/html/index.html
                  sudo service nginx start
+                 sudo service nginx stop
+                 sudo apt remove -y nginx
+                 sudo apt install apache2
+                 sudo service apache2 start
