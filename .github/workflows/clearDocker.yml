@@ -18,4 +18,6 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
+                 sudo apt update
                  docker system prune -af
+                 sudo apt update
